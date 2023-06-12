@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <!-- <title>Sider Menu Bar CSS</title> -->
+  <!-- <link rel="stylesheet" href="style.css"> -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" /> -->
+  <link rel="stylesheet" href="css/main.css" />
+  <!-- Boxicons CDN Link -->
+  <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
+  <script>
+    let sidebar = document.querySelector(".sidebar");
+    let sidebarBtn = document.querySelector(".sidebarBtn");
+    sidebarBtn.onclick = function () {
+      sidebar.classList.toggle("active");
+      if (sidebar.classList.contains("active")) {
+        sidebarBtn.classList.replace("bx-menu", "bx-menu-alt-right");
+      } else sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
+    };
+  </script>
+</head>
+
+<body>
+  <div class="sidebar">
+    <div class="logo-details">
+      <i class="bx bx-shopping-bag"></i>
+      <span class="logo_name">My Shop</span>
+    </div>
+    <ul class="nav-links">
+      <li>
+        <a href="#" class="active">
+          <i class="bx bx-grid-alt"></i>
+          <span class="links_name">현황관리</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="bx bx-box"></i>
+          <span class="links_name">제품관리</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="bx bx-list-ul"></i>
+          <span class="links_name">주문관리</span>
+        </a>
+      </li>
+      <!-- <li>
+        <a href="#">
+          <i class="bx bx-pie-chart-alt-2"></i>
+          <span class="links_name">Analytics</span>
+        </a>
+      </li> -->
+      <li>
+        <a href="#">
+          <i class="bx bx-coin-stack"></i>
+          <span class="links_name">재고관리</span>
+        </a>
+      </li>
+      <!-- <li>
+        <a href="#">
+          <i class="bx bx-book-alt"></i>
+          <span class="links_name">주문관리</span>
+        </a>
+      </li> -->
+      <li>
+        <a href="#">
+          <i class="bx bx-user"></i>
+          <span class="links_name">회원관리</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="bx bx-message"></i>
+          <span class="links_name">문의접수</span>
+        </a>
+      </li>
+      <!-- <li>
+        <a href="#">
+          <i class="bx bx-heart"></i>
+          <span class="links_name"></span>
+        </a>
+      </li> -->
+      <hr>
+      <li>
+        <a href="#">
+          <i class="bx bx-box"></i>
+          <span class="links_name">제품목록</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="bx bx-cog"></i>
+          <span class="links_name">내정보</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="bx bx-message"></i>
+          <span class="links_name">문의접수</span>
+        </a>
+      </li>
+      <li class="log_out">
+        <a href="#">
+          <i class="bx bx-log-out"></i>
+          <span class="links_name">Log out</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <!-- <section></section> -->
+  <section class="home-section">
+    <nav>
+      <div class="sidebar-Name">
+        <span class="dashboard">My Shop,</span>
+        <p>제품 관리 헬퍼 플랫폼</p>
+
+      </div>
+      <!-- <div class="search-box"> -->
+        <!-- <input type="text" placeholder="찾..." /> -->
+        <!-- <i class="bx bx-search"></i> -->
+      </div>
+      <div class="profile-details">
+        <img src="images/profile.jpg" alt="" />
+        <span class="admin_name">김철수</span>
+        <!-- <i class="bx bx-chevron-down"></i> -->
+      </div>
+    </nav>
+
+    <div class="home-content">
+      <div class="overview-boxes">
+        <div class="box">
+          <div class="right-side">
+            <div class="box-topic">전체 주문량</div>
+            <div class="number">40,876</div>
+            <div class="indicator">
+              <i class="bx bx-up-arrow-alt"></i>
+              <span class="text">어제보다 주문량 증가</span>
+            </div>
+          </div>
+          <i class="bx bx-cart-alt cart"></i>
+        </div>
+        <div class="box">
+          <div class="right-side">
+            <div class="box-topic">전체 판매량</div>
+            <div class="number">38,876</div>
+            <div class="indicator">
+              <i class="bx bx-up-arrow-alt"></i>
+              <span class="text">어제보다 판매량 증가</span>
+            </div>
+          </div>
+          <i class="bx bxs-cart-add cart two"></i>
+        </div>
+        <div class="box">
+          <div class="right-side">
+            <div class="box-topic">전체 매출</div>
+            <div class="number">2,876,000</div>
+            <div class="indicator">
+              <i class="bx bx-up-arrow-alt"></i>
+              <span class="text">어제보다 매출 증가</span>
+            </div>
+          </div>
+          <i class="bx bx-cart cart three"></i>
+        </div>
+        <div class="box">
+          <div class="right-side">
+            <div class="box-topic">환불 건수</div>
+            <div class="number">11,086</div>
+            <div class="indicator">
+              <i class="bx bx-down-arrow-alt down"></i>
+              <span class="text">어제보다 감소</span>
+            </div>
+          </div>
+          <i class="bx bxs-cart-download cart four"></i>
+        </div>
+      </div>
+
+      <div class="sales-boxes">
+        <div class="recent-sales box">
+          <div class="title">최근 판매 기록</div>
+          <div class="sales-details">
+            <ul class="details">
+              <li class="topic">Date</li>
+              <li><a href="#">2023/05/15</a></li>
+              <li><a href="#">2023/05/15</a></li>
+              <li><a href="#">2023/05/15</a></li>
+              <li><a href="#">2023/05/14</a></li>
+              <li><a href="#">2023/05/14</a></li>
+              <li><a href="#">2023/05/14</a></li>
+              <li><a href="#">2023/05/14</a></li>
+              <li><a href="#">2023/05/14</a></li>
+              <li><a href="#">2023/05/14</a></li>
+
+            </ul>
+            <ul class="details">
+              <li class="topic">고객명</li>
+              <li><a href="#">김민수</a></li>
+              <li><a href="#">백종원</a></li>
+              <li><a href="#">김철수</a></li>
+              <li><a href="#">이하늘</a></li>
+              <li><a href="#">이수근</a></li>
+              <li><a href="#">박희수</a></li>
+              <li><a href="#">김이름</a></li>
+              <li><a href="#">박하나</a></li>
+              <li><a href="#">김겨울</a></li>
+            </ul>
+            <ul class="details">
+              <li class="topic">진행상황</li>
+              <li><a href="#">배송완료</a></li>
+              <li><a href="#">배송대기</a></li>
+              <li><a href="#">환불</a></li>
+              <li><a href="#">배송완료</a></li>
+              <li><a href="#">배송대기</a></li>
+              <li><a href="#">환불</a></li>
+              <li><a href="#">배송완료</a></li>
+              <li><a href="#">배송대기</a></li>
+              <li><a href="#">배송완료</a></li>
+            </ul>
+            <ul class="details">
+              <li class="topic">결제금액</li>
+              <li><a href="#">901,000</a></li>
+              <li><a href="#">930,000</a></li>
+              <li><a href="#">840,000</a></li>
+              <li><a href="#">650,000</a></li>
+              <li><a href="#">55,600</a></li>
+              <li><a href="#">900,000</a></li>
+              <li><a href="#">300,000</a></li>
+              <li><a href="#">520,000</a></li>
+              <li><a href="#">500,000</a></li>
+            </ul>
+          </div>
+          <div class="button">
+            <a href="#">전체보기</a>
+          </div>
+        </div>
+        <div class="top-sales box">
+          <div class="title">판매량 TOP 8</div>
+          <ul class="top-sales-details">
+            <li>
+              <a href="#">
+                <img src="images/sunglasses.jpg" alt="" />
+                <span class="product">Vuitton 선글라스</span>
+              </a>
+              <span class="price">1,107,000</span>
+            </li>
+            <li>
+              <a href="#">
+                <img src="images/jeans.jpg" alt="" />
+                <span class="product">Hourglass 청바지 </span>
+              </a>
+              <span class="price">1,567,000</span>
+            </li>
+            <li>
+              <a href="#">
+                <img src="images/nike-min.jpg" alt="" />
+                <span class="product">Nike Sport 운동화</span>
+              </a>
+              <span class="price">123,000</span>
+            </li>
+            <li>
+              <a href="#">
+                <img src="images/scarves.jpg" alt="" />
+                <span class="product">Hermes Silk 스카프</span>
+              </a>
+              <span class="price">2,312,000</span>
+            </li>
+            <li>
+              <a href="#">
+                <img src="images/blueBag.jpg" alt="" />
+                <span class="product">Succi Ladies 백</span>
+              </a>
+              <span class="price">1,456,000</span>
+            </li>
+            <li>
+              <a href="#">
+                <img src="images/bag.jpg" alt="" />
+                <span class="product">Gucci 여성 백</span>
+              </a>
+              <span class="price">2,345,000</span>
+            </li>
+
+            <li>
+              <a href="#">
+                <img src="images/addidas.jpg" alt="" />
+                <span class="product">Addidas 러닝화</span>
+              </a>
+              <span class="price">245,000</span>
+            </li>
+            <li>
+              <a href="#">
+                <img src="images/shirt.jpg" alt="" />
+                <span class="product">Bilack 티셔츠</span>
+              </a>
+              <span class="price">1,245,000</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+
+</html>
